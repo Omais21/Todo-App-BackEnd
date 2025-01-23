@@ -51,7 +51,7 @@ app.patch("/api/v1/todo/:id",async (request, response) => {
     { todoContent: request.body.todoContent }
   )
 
-  console.log('result=>', result);
+  //console.log('result=>', result);
 
   if (result) {
     response.status(201).send({
