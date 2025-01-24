@@ -9,7 +9,7 @@ const port = process.env.PORT || 5002;
 
 app.use(express.json()); 
 app.use(
-  cors({ origin: ["http://localhost:5173", "https://omais-todo_app.surge.sh/"] }),
+  cors({ origin: ["http://localhost:5173", "https://omais-todo_app.surge.sh"] }),
 );
 
 app.get("/api/v1/todos",async (request, response) => {
